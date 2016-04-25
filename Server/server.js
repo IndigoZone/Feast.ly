@@ -14,4 +14,6 @@ app.listen(port);
 //prints sucess when the server is running 
 console.log('Server now listening on por: ', port);
 
+//exports the app server
+module.exports = app;
 
