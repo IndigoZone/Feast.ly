@@ -6,3 +6,7 @@ var express = require('express'),
 //creates server
 var app = express();
 
+//creates default port
+var port = process.env.PORT || 4444;
+
+
