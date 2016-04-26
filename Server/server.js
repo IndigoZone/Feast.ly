@@ -3,6 +3,9 @@ var express = require('express'),
   bodyParser = require('body-parser'),
   mongoose = require('mongoose');
 
+//require database
+var db = require('../DB/db.js');
+
 //creates server
 var app = express();
 
