@@ -1,6 +1,6 @@
 // sets up server requirements
 var express = require('express'),
-  bodyparser = require('body-parser'),
+  bodyParser = require('body-parser'),
   mongoose = require('mongoose');
 
 //creates server
@@ -8,6 +8,10 @@ var app = express();
 
 //creates default port
 var port = process.env.PORT || 4444;
+
+//middleware
+app.use(express.static(__dirname + '/'));
+app.use(bodyParser.json());
 
 //connects app and port
 app.listen(port);
