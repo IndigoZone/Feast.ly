@@ -13,8 +13,11 @@ var app = express();
 var port = process.env.PORT || 4444;
 
 //middleware
-app.use(express.static(__dirname + '/'));
+app.use(express.static('../app/'));
 app.use(bodyParser.json());
+
+//mongoose connection
+mongoose.connect('mongodb://IndigoZone:telegraph5@ds019481.mlab.com:19481/heroku_vj69wpp5'); 
 
 //connects app and port
 app.listen(port);
