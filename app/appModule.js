@@ -1,1 +1,1 @@
-var feastly = angular.module('feastly', ['feastlyRoutes']);
+var feastly = angular.module('feastly', ['feastlyRoutes'] );
