@@ -1,0 +1,70 @@
+body{
+  background: #F5F9FA;
+}
+
+h1{
+  font-size: 75px;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: ##4F682C;
+}
+
+h3{
+  font-size: 20px;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+  h3 a{
+    color: #4F682C;
+  }
+
+
+
+nav{
+  /*background-color: #f2b632;*/
+  font-family:'Roboto', sans-serif;
+  font-weight: 100;
+
+
+}
+
+.navbar-brand{
+  /*background-color: #C3AC95;*/
+font-family: 'Marck Script', cursive;
+font-weight: 400;
+
+}
+
+li a {
+  color:#4F682C;
+}
+
+nav a {
+  color:#4F682C;
+}
+
+.form-inline{
+  float:right;
+}
+
+
+button{
+  background-color:#f2b632;
+  font-family:'Roboto', sans-serif;
+  font-weight: 100;
+
+}
+
+.btn-block{
+  background-color:  #f2b632;
+}
+
+ng-view{
+  margin-top: 100px
+}
+p{
+  color: #b5b5b7;
+}
