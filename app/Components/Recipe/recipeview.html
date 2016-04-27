@@ -5,7 +5,7 @@
 <body> -->
 <!-- Below is where the doc actually begins the rest of the html is for testing -->
 
-<div id='myRecipe'>
+<div id='myRecipe' class='container'>
   <div ng-controller="RecipeViewCtrl">
     <h1>{{recipeName}}</h1>
     <img src={{recipeImage}}>
@@ -13,13 +13,15 @@
       <div ng-repeat="item in recipeIngredients">
           {{item}}
       </div>
+      <h2>Preparation</h2>
+      <div>{{recipeInstructions}}</div>
   </div>
 </div>
 
 <!-- End of Document -->
 
 
-<!-- <script src="../node_modules/angular/angular.js"></script>
+<!-- <script src="feastly/node_modules/angular/angular.js"></script>
 <script src='recipeController.js'></script>
 <script src="recipeResultsExample.js"></script>
 </body>
