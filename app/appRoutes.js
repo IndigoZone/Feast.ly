@@ -21,7 +21,4 @@ feastly.config(function($routeProvider, $httpProvider) {
       controller: 'ResultsController'
     })
      .otherwise({redirectTo: '/home'});
-
 });
-
-

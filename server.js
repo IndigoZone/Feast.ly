@@ -4,7 +4,7 @@ var express = require('express'),
   mongoose = require('mongoose');
 
 //require database
-var db = require('../DB/db.js');
+var db = require('./DB/db.js');
 
 //creates server
 var app = express();
@@ -13,7 +13,7 @@ var app = express();
 var port = process.env.PORT || 4444;
 
 //middleware
-app.use(express.static('../app/'));
+app.use(express.static(__dirname + '/app/'));
 app.use(bodyParser.json());
 
 //mongoose connection

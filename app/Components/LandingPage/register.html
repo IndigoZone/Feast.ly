@@ -1,0 +1,12 @@
+<div id='register' style="margin: 0 auto;text-align: center">
+  <div ng-controller="LandingController">
+    <a href="#"><img style="margin: 0 auto;text-align: center" src="http://placehold.it/640x360"></a>
+    <h1>Register</h1>
+    <form name="signupForm" ng-submit='register()'>
+      <label>Username</label><input type='text' ng-model='username'>
+      <label>Password</label><input type="password" ng-model='password'>
+      <button>register</button>
+    </form>
+    <a href="#/login">Already have an account? <strong>Login</strong> ...</a>
+  </div>
+</div>
