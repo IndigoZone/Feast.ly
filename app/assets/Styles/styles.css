@@ -16,6 +16,13 @@ figure {
   flex: 0 100px;
   position: relative;
 }
+
+figure > a {
+  opacity: .8;
+}
+figure > a:hover {
+  opacity: 1;
+}
 figcaption {
   background: rgba(0,0,0,0.5);
   display: block;
@@ -32,9 +39,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
-
 }
-
 .homeView h1 {
     text-align: center;
 }
@@ -46,9 +51,10 @@ section {
     text-align: right;
 }
 
-@media (min-width: 768px)
-.form-inline .form-control {
-    width: 30% !important ;
+@media (min-width: 768px) {
+  .form-inline .form-control {
+      width: 30% !important ;
+  }
 }
 .navbar-default .navbar-brand {
     color: #FFB03B; 
@@ -67,18 +73,22 @@ footer {
   text-align: center;
   padding-top: 20px;
 }
-
 footer a {
     color: #FFB03B;
     text-decoration: none;
 }
-
 footer a:hover {
     color: black;
     text-decoration: none;
 }
-
 footer p {
     color: #777;
     font-size: 14px !important;
 }
+
+/*********** FEATURED RECIPES CONTAINER ***************/
+
+.container h1 {
+  text-align: center;
+}
+
