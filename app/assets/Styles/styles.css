@@ -16,6 +16,13 @@ figure {
   flex: 0 100px;
   position: relative;
 }
+
+figure > a {
+  opacity: .8;
+}
+figure > a:hover {
+  opacity: 1;
+}
 figcaption {
   background: rgba(0,0,0,0.5);
   display: block;
