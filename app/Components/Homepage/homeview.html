@@ -10,7 +10,7 @@
   <section class="featuredRecipes">
     <!-- an image or a slider? -->
     <figure ng-repeat="recipe in featured.matches">
-      <a ng-href="#"><img ng-src={{recipe.imageUrlsBySize["90"]}}></a>
+      <a ng-href="#"><img ng-src={{recipe.imageUrlsBySize["90"]}} title="rating: {{recipe.rating}}"></a>
       <figcaption>{{recipe.recipeName}}</figcaption>
     </figure>
   </section>
