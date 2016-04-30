@@ -7,12 +7,19 @@
 
 <div id='myRecipe' class='container'>
   <div ng-controller="RecipeViewCtrl">
-    <h1>{{recipeName}}</h1>
-    <img src={{recipeImage}}>
-    <h1>What To Gather:</h1>
-      <div ng-repeat="item in recipeIngredients">
-          {{item}}
+    <div class="col-md-12">
+      <h2>{{recipeName}}</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <img src={{recipeImage}}>
       </div>
+        <h2>What To Gather:</h2>
+        <div ng-repeat="item in recipeIngredients">
+          {{item}}
+        </div>
+    </div>
+    <div>
       <h2>Preparation</h2>
       <div>{{recipeInstructions}}</div>
   </div>
