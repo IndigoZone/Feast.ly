@@ -1,12 +1,14 @@
-<div id='register' style="margin: 0 auto;text-align: center">
+<div id='register' class="authDiv">
   <div ng-controller="LandingController">
-    <a href="#"><img style="margin: 0 auto;text-align: center" src="http://placehold.it/640x360"></a>
+  <img class="hat" src="https://lh3.ggpht.com/ppY5z1VSKsW_tMAb6mKN-HWGGa93tSR5-sUOYW0v50zneT70pULmH4W7B9yfkHMNrZA=w300">
     <h1>Register</h1>
-    <form name="signupForm" ng-submit='register()'>
-      <label>Username</label><input type='text' ng-model='username'>
-      <label>Password</label><input type="password" ng-model='password'>
-      <button>register</button>
-    </form>
-    <a href="#/login">Already have an account? <strong>Login</strong> ...</a>
+    <div>
+      <form name="signupForm" ng-submit='register()'>
+        <label>Username</label><input type='text' ng-model='username'><br>
+        <label>Password</label><input type="password" ng-model='password'><br>
+        <button class="landingButton" ng-click="register()">Register</button>
+      </form>
+    </div>  
   </div>
+    <a href="#/login">Already have an account? <strong>Sign in</strong> ...</a>
 </div>

@@ -21,6 +21,30 @@ mongoose.connect('mongodb://IndigoZone:telegraph5@ds019481.mlab.com:19481/heroku
 
 //connects app and port
 app.listen(port);
+
+//handles register
+app.post('/api/register', function(req,res){
+  db.create({
+    username: req.body.username,
+    password: req.body.password
+  }, function(err, user){
+    res.send(user);
+  });
+
+});
+
+//handles login
+app.post('/api/login', function(req,res){
+  db.findOne({username:req.body.username}, function(err, user){
+    if(user.password === req.body.password){
+      res.send('success');
+    } else {
+      res.send('failure');
+    }
+  });
+
+});
+
 //prints sucess when the server is running 
 console.log('Server now listening on port: ', port);
 
