@@ -36,8 +36,12 @@ app.post('/api/register', function(req,res){
 //handles login
 app.post('/api/login', function(req,res){
   db.findOne({username:req.body.username}, function(err, user){
-    if(user.password === req.body.password){
-      res.send('success');
+    if (err){
+      res.send(err);
+    } else if(user){
+      if(req.body.password === user.password){
+        res.send('success');
+      }
     } else {
       res.send('failure');
     }
