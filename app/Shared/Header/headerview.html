@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#/home">Feastly</a>
+      <a class="navbar-brand" href="#/home">Feast.ly</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,12 +20,16 @@
           <a href="#/recipe" role="button" aria-haspopup="true" aria-expanded="false">Recipes</a>
         </li>
       </ul>
-      <form class="navbar-form navbar-left" role="search" novalidate ng-submit="send()">
+      <form ng-controller ='search.ctrl'class="form-inline pull-xs-right">
+        <input ng-model ="userQuery" class="form-control" type="text" placeholder="Search">
+        <button ng-click="searchRecipes(userQuery)"class="btn btn-success-outline" type="submit">Search</button>
+      </form>
+      <!-- <form class="navbar-form navbar-left" role="search" novalidate ng-submit="send()">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search your recipe" ng-model="query">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      </form> -->
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#/login">Sign in</a></li>
         <li>
