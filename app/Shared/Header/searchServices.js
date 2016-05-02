@@ -1,7 +1,9 @@
+var results = ['hola', 'hello'];
+
 angular.module('search.services', [])
 
 .factory('Recipes', ['$http', '$q',function($http, $q){
-  var results;
+  // var results;
   getRecipes = function(criteria) {
   return  $http({
         method: 'GET',
@@ -10,7 +12,7 @@ angular.module('search.services', [])
         headers: {'X-Yummly-App-ID':'85328aaa','X-Yummly-App-Key': '9b9c3f69de268c05cd19da7b5bea7a42'}
      }).success(function(res){
         console.log('data successfully retrieved', res);
-        results = res;
+        results = res.matches;
         console.log('results:', results);
         return res.data;
     }).error(function(){
