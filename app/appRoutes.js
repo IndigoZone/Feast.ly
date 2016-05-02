@@ -20,7 +20,7 @@ feastly.config(function($routeProvider, $httpProvider) {
     })
      .when('/results', {
       templateUrl: 'Components/SearchResults/resultsview.html',
-      controller: 'ResultsController',
+      // controller: 'ResultsController',
       authenticate: true
     })
      .otherwise({redirectTo: '/login'});
