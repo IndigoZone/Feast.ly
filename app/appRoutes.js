@@ -24,8 +24,4 @@ feastly.config(function($routeProvider, $httpProvider) {
       authenticate: true
     })
      .otherwise({redirectTo: '/login'});
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 69a5404fd8067ea8c552ef9856e2e8b9732c0dea
