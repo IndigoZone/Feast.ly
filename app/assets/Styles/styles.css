@@ -92,3 +92,17 @@ footer p {
   text-align: center;
 }
 
+/*********** LOGIN/REGISTER STYLES ***************/
+.authDiv{
+  margin: 0 auto;
+  text-align: center;
+}
+.hat{
+  width: 150px;
+}
+.landingButton{
+  width:220px;
+}
+.wrong{
+  color: red;
+}
