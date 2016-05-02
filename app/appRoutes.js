@@ -2,7 +2,8 @@ feastly.config(function($routeProvider, $httpProvider) {
   $routeProvider
     .when('/home', {
       templateUrl: 'Components/Homepage/homeview.html',
-      controller: 'homeViewCtrl'
+      controller: 'homeViewCtrl',
+      authenticate: true
     })
     .when('/register', {
       templateUrl: 'Components/LandingPage/register.html',
@@ -14,11 +15,13 @@ feastly.config(function($routeProvider, $httpProvider) {
     })
     .when('/recipe', {
       templateUrl: 'Components/Recipe/recipeview.html',
-      controller: 'RecipeViewCtrl'
+      controller: 'RecipeViewCtrl',
+      authenticate: true
     })
      .when('/results', {
       templateUrl: 'Components/SearchResults/resultsview.html',
-      controller: 'ResultsController'
+      controller: 'ResultsController',
+      authenticate: true
     })
-     .otherwise({redirectTo: '/home'});
+     .otherwise({redirectTo: '/login'});
 });
