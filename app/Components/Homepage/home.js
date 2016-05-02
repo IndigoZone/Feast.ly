@@ -1,10 +1,19 @@
+var thisRecipe;
 angular.module ('feastly.home', [])
-.controller('homeViewCtrl', function($scope, $http, $location) {
+.controller('homeViewCtrl', function($scope, $http, $location, Recipes) {
 
   $scope.data = '';
   $scope.featured = '';
   $scope.query = '';
+  $scope.showRecipe = '';
+  $scope.showThisOne;
 
+  //on click sends another request to get that specific recipe
+
+  $scope.showRecipe = function(value){
+    thisRecipe = value
+  };
+  
   //on query make this call
   $scope.send = function(){
     console.log('send called');
