@@ -7,6 +7,8 @@ angular.module('search.directive', [])
     input.toString();
     $scope.userInput['q'] = input.split(" ").join('+');
     console.log($scope.userInput)
-    Recipes.getRecipes($scope.userInput)
+    Recipes.getRecipes($scope.userInput).then(function(data){
+        console.log('data:',data)
+    })
   };
 }]);

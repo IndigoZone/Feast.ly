@@ -8,16 +8,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#/home">Feast.ly</a>
+      <a class="navbar-brand" ui-sref="home">Feast.ly</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" homeViewCtrl>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#/home">Home <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a ui-sref="home">Home <span class="sr-only">(current)</span></a></li>
         <!-- <li><a href="#">Link</a></li> -->
         <li>
-          <a href="#/recipe" role="button" aria-haspopup="true" aria-expanded="false">Recipes</a>
+          <a ui-sref="recipe" role="button" aria-haspopup="true" aria-expanded="false">Recipes</a>
         </li>
       </ul>
       <form ng-controller ='search.ctrl'class="form-inline pull-xs-right">
@@ -31,9 +31,9 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#/login">Sign in</a></li>
+        <li><a ui-sref="login">Sign in</a></li>
         <li>
-          <a href="#/register" role="button" aria-haspopup="true" aria-expanded="false">Register</a>
+          <a ui-sref="register" role="button" aria-haspopup="true" aria-expanded="false">Register</a>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
