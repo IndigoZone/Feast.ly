@@ -9,6 +9,7 @@ angular.module('search.directive', [])
     console.log($scope.userInput)
     Recipes.getRecipes($scope.userInput).then(function(data){
         console.log('data:',data)
+        return data;
     })
   };
 }]);

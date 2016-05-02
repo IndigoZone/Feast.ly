@@ -61,7 +61,8 @@ feastly.config(function($stateProvider, $urlRouterProvider) {
      .state('results', {
       url: '/results',
       templateUrl: 'Components/SearchResults/resultsview.html',
-      controller: 'ResultsController',
+      controller: 'search.ctrl',
+      // controller: 'ResultsController',
       authenticate: true
     });
 });
