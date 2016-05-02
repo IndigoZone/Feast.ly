@@ -1,6 +1,6 @@
  angular.module ('feastly.recipe', [])
 
-  .controller('RecipeViewCtrl', function($scope, Recipes) {
+  .controller('RecipeViewCtrl', function($scope, Recipe) {
     // $scope.recipeName = thisRecipe.name;
     // $scope.recipeName;
     $scope.tellMe = function(){
@@ -8,7 +8,7 @@
     };
     $scope.getRecipe = function(){
       // console.log(thisRecipe)
-      Recipes.showRecipe(thisRecipe).then(function(){
+      Recipe.showRecipe(thisRecipe).then(function(){
         $scope.tellMe();
         $scope.recipeName = recipeViewRes.name;
         $scope.recipeImage = recipeViewRes.images[0].hostedLargeUrl;

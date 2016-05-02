@@ -1,6 +1,6 @@
 var thisRecipe;
 angular.module ('feastly.home', [])
-.controller('homeViewCtrl', function($scope, $http, $location, Recipes) {
+.controller('homeViewCtrl', function($scope, $http, $location, Recipe) {
 
   $scope.data = '';
   $scope.featured = '';

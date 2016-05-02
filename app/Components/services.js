@@ -1,6 +1,6 @@
 var recipeViewRes;
 angular.module('feastly.services', [])
-.factory('Recipes', function ($http) {
+.factory('Recipe', function ($http) {
   var showRecipe = function(value){
     return $http({
       method: 'GET',
