@@ -1,28 +1,21 @@
-<!-- <!DOCTYPE html>
-<html ng-app='recipeView'>
-<head>
-</head>
-<body> -->
-<!-- Below is where the doc actually begins the rest of the html is for testing -->
-
 <div id='myRecipe' class='container'>
   <div ng-controller="RecipeViewCtrl">
-    <h1>{{recipeName}}</h1>
-    <img src={{recipeImage}}>
-    <h1>What To Gather:</h1>
-      <div ng-repeat="item in recipeIngredients">
-          {{item}}
+    <div class="col-md-12">
+      <h1>{{recipeName}}</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <img src={{recipeImage}}>
       </div>
-      <h2>Preparation</h2>
-      <div>{{recipeInstructions}}</div>
+      <div class="col-md-4">
+        <h2>What You'll Need:</h2>
+        <div ng-repeat="item in recipeIngredients track by $index">
+          {{item}}
+        </div>
+      </div>
+    <div class="col-md-4">
+      <h2>For Preparation Steps</h2>
+      <a href={{recipeLink}} target="blank">Click Here</a>
+    </div>
   </div>
 </div>
-
-<!-- End of Document -->
-
-
-<!-- <script src="feastly/node_modules/angular/angular.js"></script>
-<script src='recipeController.js'></script>
-<script src="recipeResultsExample.js"></script>
-</body>
-</html> -->
