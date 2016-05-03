@@ -1,12 +1,12 @@
 # Feast.ly
 
-> Pithy project description
+> Feast.ly is a recipe search app that makes it easy to discover new cuisine.
 
 ## Team
 
-  - __Product Owner__: teamMember
-  - __Scrum Master__: teamMember
-  - __Development Team Members__: teamMember, teamMember, teamMember
+  - __Product Owner__: Kimerie Green
+  - __Scrum Master__: Richard Hong 
+  - __Development Team Members__: Andy Nixon, Yeiber Cano
 
 ## Table of Contents
 
@@ -20,15 +20,16 @@
 
 ## Usage
 
-> Some usage instructions
+> Enter your favorite ingredient or explore our featured section to browse new recipes.
 
 ## Requirements
 
-- Node 0.10.x
-- Redis 2.6.x
-- Postgresql 9.1.x
-- etc
-- etc
+- node
+- angular
+- mongoose
+- express
+- body-parser
+- bootstrap
 
 ## Development
 
@@ -37,14 +38,12 @@
 From within the root directory:
 
 ```sh
-sudo npm install -g bower
 npm install
-bower install
 ```
 
 ### Roadmap
 
-View the project roadmap [here](LINK_TO_PROJECT_ISSUES)
+View the project roadmap [here](https://github.com/IndigoZone/Feast.ly)
 
 
 ## Contributing
