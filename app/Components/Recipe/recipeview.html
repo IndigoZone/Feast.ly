@@ -1,21 +1,19 @@
-<div id='myRecipe' class='container'>
-  <div ng-controller="RecipeViewCtrl">
-    <div class="col-md-12">
-      <h1>{{recipeName}}</h1>
+<section id='myRecipe' class='container' ng-controller="RecipeViewCtrl">
+    <div class="container">
+      <h1><span class="recipename">{{recipeName}}<span></h1>
+        <img class="center" src={{recipeImage}}>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <img src={{recipeImage}}>
-      </div>
-      <div class="col-md-4">
-        <h2>Ingredients</h2>
-        <div ng-repeat="item in recipeIngredients track by $index">
-          {{item}}
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Ingredients</h2>
+            <div class="ingredients" ng-repeat="item in recipeIngredients track by $index">
+              {{item}}
+            </div>
+            <a href={{recipeLink}} target="blank">Click Here for Instructions</a>
+          </div>
         </div>
+        <hr>
       </div>
-    <div class="col-md-4">
-      <h2>Instructions</h2>
-      <a href={{recipeLink}} target="blank">Click Here</a>
-    </div>
-  </div>
-</div>
+</section>
