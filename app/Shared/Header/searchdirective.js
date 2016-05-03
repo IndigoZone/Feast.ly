@@ -13,7 +13,14 @@ angular.module('search.directive', [])
          $scope.list = data.data;
           console.log('results:', $scope.list)
         // return data;
-        $state.go('results');
+        //Look into this later
+        if($state.current.url !== '/results'){
+          console.log("Inside if Statement", $state.current.url)
+          $state.go('results');
+        } else {
+          console.log("no!!!!!!!!!!!")
+        $state.go($state.current, {}, {reload: true});          
+        }
     })
   };
 
