@@ -1,26 +1,28 @@
 <!-- depicts features recipes -->
 
-<div class="container" ng-controller="homeViewCtrl">
-<!--   <form ng-required="required" class="form-inline pull-xs-right" novalidate ng-submit="send()">
-    <input ng-required="required" class="form-control" type="text" placeholder="Search" ng-model="query">
-    <button class="btn btn-success-outline" type="submit">Search</button>
-  </form> -->
-  <h1> Featured recipes:</h1>
-    {{query}}
-  <section class="featuredRecipes">
-    <!-- an image or a slider? -->
-    <figure ng-repeat="recipe in featured.matches">
-      <a ui-sref="recipe" ng-click="showRecipe(recipe.id)"><img ng-src={{recipe.imageUrlsBySize["90"]}} title="rating: {{recipe.rating}}"></a>
-      <figcaption>{{recipe.recipeName}}</figcaption>
-    </figure>
-  </section>
 
+  <section class="homeView" ng-controller="homeViewCtrl">
 
-    <section class="featuredRecipes">
-    <!-- an image or a slider? -->
-    <figure ng-repeat="recipe in data.matches">
-      <a ng-href="#"><img ng-src={{recipe.imageUrlsBySize["90"]}}></a>
-      <figcaption>{{recipe.recipeName}}</figcaption>
-    </figure>
-  </section>
-</div>
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+   <div class="jumbotron">
+     <div class="container">
+       <h1><span class="headline">Dinner Party<span></h1>
+       <p class="feature-desc">Impress your friends with these quick and easy dishes!</p>
+       <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+     </div>
+   </div>
+
+   <div class="container">
+     <!-- Example row of columns -->
+     <div class="row">
+       <div ng-repeat="recipe in featured.matches" class="col-md-4">
+         <a ui-sref="recipe" ng-click="showRecipe(recipe.id)"><img ng-src={{recipe.imageUrlsBySize["90"]}} title="rating: {{recipe.rating}}"></a>
+         <h2>{{recipe.recipeName}}</h2>
+         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+         <p><a class="btn btn-default" ui-sref="recipe" ng-click="showRecipe(recipe.id)" role="button">View recipe &raquo;</a></p>
+       </div>
+
+     </div>
+   <hr>
+ </div>
+</section>

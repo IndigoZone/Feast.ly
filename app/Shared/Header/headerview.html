@@ -1,45 +1,30 @@
-<nav class="navbar navbar-default" ng-controller="homeViewCtrl">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" ui-sref="home">Feast.ly</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" homeViewCtrl>
-      <ul class="nav navbar-nav">
-        <li class="active"><a ui-sref="home">Home <span class="sr-only">(current)</span></a></li>
-        <!-- <li><a href="#">Link</a></li> -->
-        <li>
-          <a ui-sref="recipe" role="button" aria-haspopup="true" aria-expanded="false">Recipes</a>
-        </li>
-      </ul>
-      <form ng-controller ='search.ctrl'class="form-inline pull-xs-right">
-        <input ng-model ="userQuery" class="form-control" type="text" placeholder="Search">
-        <button  ng-click="searchRecipes(userQuery)"class="btn btn-success-outline" type="submit">Search</button>
-      </form>
-      <!-- <form class="navbar-form navbar-left" role="search" novalidate ng-submit="send()">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search your recipe" ng-model="query">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form> -->
-      <ul class="nav navbar-nav navbar-right">
-        <li><a ui-sref="login">Sign in</a></li>
-        <li>
-          <a ui-sref="register" role="button" aria-haspopup="true" aria-expanded="false">Register</a>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+<div class="container-fluid">
+  <nav class="navbar navbar-light bg-faded">
+  <a class="navbar-brand" ui-sref="home">Feast.ly</a>
+  <ul class="nav navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" ui-sref="home">Home<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" ui-sref="#">Recipes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" ui-sref="#">Favorites</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" ui-sref="#">Shopping Lists</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" ui-sref="#">Settings</a>
+    </li>
+  </ul>
+  <form ng-controller ='search.ctrl'class="form-inline pull-xs-right .navbar-right">
+    <input ng-model ="userQuery" class="form-control" type="text" placeholder="Search">
+    <button ng-click="searchRecipes(userQuery)"class="btn btn-success-outline" type="submit">Search</button>
+  </form>
 </nav>
-
+</section>
+</div>
 <!-- this code should be inserted in index.html header as follow
     <nav ng-include="'/Shared/Header/headerview.html'"> </nav>
  -->

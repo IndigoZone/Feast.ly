@@ -1,4 +1,4 @@
-<div id='register' class="authDiv">
+<!-- <div id='register' class="authDiv">
   <div ng-controller="LandingController">
   <img class="hat" src="https://lh3.ggpht.com/ppY5z1VSKsW_tMAb6mKN-HWGGa93tSR5-sUOYW0v50zneT70pULmH4W7B9yfkHMNrZA=w300">
     <h1>Register</h1>
@@ -8,7 +8,28 @@
         <label>Password</label><input type="password" ng-model='password'><br>
         <button class="landingButton" ng-click="register()">Register</button>
       </form>
-    </div>  
+    </div>
   </div>
     <a href="#/login">Already have an account? <strong>Sign in</strong> ...</a>
-</div>
+</div> -->
+
+<div id='register' class="authDiv">
+  <div ng-controller="LandingController">
+<div class="container">
+  <h1 class="brand-login">Feast.ly</h1>
+      <form name="signupForm" class="form-signin" ng-submit='register()'>
+        <h2 class="form-signin-heading">Register Here</h2>
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input type="text" id="username" ng-model='username' class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" ng-model='password' class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> <span class="remember-me">Remember me</span>
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block log-reg" ng-click='register()'type="submit">Register</button>
+      </form>
+      <a class="already" href="#/login">Already have an account? <strong>Sign in</strong> ...</a>
+      </div>
+    </div>
