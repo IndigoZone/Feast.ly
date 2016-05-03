@@ -1,18 +1,18 @@
 {
   "name": "feastly",
   "version": "1.0.0",
-  "description": "> Pithy project description",
+  "description": "Feast.ly is a recipe search app that makes it easy to discover new cuisine.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IndigoZone/Feast.ly.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": "recipes, feastly, food",
+  "author": "Kimerie Green, Richard Hong, Andy Nixon, Yeiber Cano",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/IndigoZone/Feast.ly.git"
   },

@@ -16,29 +16,25 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
 
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+## Feast.ly##
+  > Give us an ingredient, we give you a recipe!.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Feast.ly agregates popular recipes that users can search.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > People tend to cook the same kinds of meals, and they want to expand their culinary horizon.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
-
+  > We make it easy to find recipes with different kinds of dietary restrictions.
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  > Feast.ly exposes you to a world of flavors.
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > Enter your favorite ingredient or explore our featured section to browse new recipes.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > I can't believe how many recipe options I found by just typing one ingredient! Love it!
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > Feast.ly your next meal.
