@@ -26,7 +26,7 @@
 //      .otherwise({redirectTo: '/login'});
 // });
 
-feastly.config(function($stateProvider, $urlRouterProvider) {
+feastly.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     
   $urlRouterProvider.otherwise('/login');
   
@@ -65,4 +65,6 @@ feastly.config(function($stateProvider, $urlRouterProvider) {
       // controller: 'ResultsController',
       authenticate: true
     });
+
+     $locationProvider.html5Mode(true);
 });
