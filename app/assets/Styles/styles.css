@@ -1,99 +1,187 @@
-/*********** HOMEVIEW STYLES ***************/
-html{
-  /*height: 100%;*/
-}
-section {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  height: 100%;
-  
-}
-figure {
-  margin: 0;
-  display: block;
-  height: 150px;
-  flex: 0 100px;
-  position: relative;
+/*HomeView Styles*/
+body{
+  background: #F5F9FA;
 }
 
-figure > a {
-  opacity: .8;
+.jumbotron {
+    position: relative;
+    background: #000 url("food-healthy-hand-cooking.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    padding: 0px;
+    margin-bottom: 0px;
+
 }
-figure > a:hover {
-  opacity: 1;
+
+.feature-desc{
+  color: #16174f;
 }
-figcaption {
-  background: rgba(0,0,0,0.5);
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  width: 90%;
+
+.btn.btn-primary.btn-lg{
+  background-color:#f2b632;
+  font-family:'Roboto', sans-serif;
+  font-weight: 100;
+  border-color: #f2b632;
+
+}
+.headline{
+  /*font-size: 75px;*/
+  font-family: 'Marck Script', cursive;
+  font-weight: 700;
+  color: #16174f;
+}
+
+h2{
   text-align: center;
-  color: white;
-  padding: 4px;
-  box-sizing: border-box;
-}
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-around;
-}
-.homeView h1 {
-    text-align: center;
+  font-family:'Roboto', sans-serif;
 }
 
-/*********** NAV STYLES ***************/
-
-.navbar {
-    margin-top: 20px;
-    text-align: right;
-}
-
-@media (min-width: 768px) {
-  .form-inline .form-control {
-      width: 30% !important ;
+  img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
-.navbar-default .navbar-brand {
-    color: #FFB03B; 
-    font-family: kaushan-script, cursive !important;
-    font-size: 24px;
+
+  .btn.btn-default{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+nav{
+  /*background-color: #f2b632;*/
+  font-family:'Roboto', sans-serif;
+  font-weight: 100;
+  padding: 0px;
+  margin-bottom: 0px;
+
 }
 
-/*********** FOOOTER ***************/
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 90px;
-  background-color: #f5f5f5;
-  text-align: center;
-  padding-top: 20px;
-}
-footer a {
-    color: #FFB03B;
-    text-decoration: none;
-}
-footer a:hover {
-    color: black;
-    text-decoration: none;
-}
-footer p {
-    color: #777;
-    font-size: 14px !important;
+.navbar-brand{
+  /*background-color: #C3AC95;*/
+font-family: 'Marck Script', cursive;
+font-weight: 400;
 }
 
-/*********** FEATURED RECIPES CONTAINER ***************/
 
-.container h1 {
-  text-align: center;
+li a {
+  color:#4F682C;
+}
+
+nav a {
+  color:#4F682C;
+}
+
+form{
+  margin-top: 10px;
+}
+.form-inline{
+  float:right;
+}
+
+button{
+  background-color:#f2b632;
+  font-family:'Roboto', sans-serif;
+  font-weight: 100;
+  color: #fff;
+}
+
+.btn-block{
+  background-color:  #f2b632;
+}
+
+ng-view{
+  margin-top: 100px
+}
+
+p{
+  text-align: justify;
+  color: #b5b5b7;
 }
 
 /*********** LOGIN/REGISTER STYLES ***************/
-.authDiv{
+#register{
+  background:url("cooking.jpg")
+  center center;
+  width: 100%;
+  height: 100%;
+  background-size:cover;
+  overflow: hidden;
+
+}
+
+#login{
+  background:url("cooking.jpg")
+  center center;
+  width: 100%;
+  height: 100%;
+  background-size:cover;
+  overflow: hidden;
+
+}
+
+#brand{
+
+}
+h1.brand-login{
+  font-family: 'Marck Script', cursive;
+  font-weight: 700;
+  font-size: 200px;
+  color:#f2b632;
+  text-align: center;
+
+}
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="username"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin-heading{
+  color:#f2b632;
+}
+
+.remember-me{
+  color:#f2b632;
+}
+
+a.already{
+  color:#f2b632;
+  text-align:center;
+}
+
+/*.authDiv{
   margin: 0 auto;
   text-align: center;
 }
@@ -105,4 +193,65 @@ footer p {
 }
 .wrong{
   color: red;
+}*/
+
+/*********** Search Results ***************/
+
+img.img-responsive.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 a{
+  color:#4F682C;
+}
+
+h3{
+  text-align: center;
+  font-family:'Roboto', sans-serif;
+}
+
+div.row{
+  margin-top: 20px;
+}
+
+.pagination>li.active>a {
+  background: #fff;
+  /*color: #fff;*/
+  border: 1px solid #f2b632;
+}
+.pagination>li.page-item.disabled>a{
+  border: 1px solid #f2b632;
+  /*background-color: #f2b632 !important;*/
+  color:#f2b632;
+}
+
+.pagination>li.page-item>a.page-link{
+  border: 1px solid #f2b632;
+  color:#f2b632;
+}
+
+/*********** Recipe View ***************/
+#myrecipe{
+  margin-bottom: 50px;
+}
+.recipe-name{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  color:#f2b632;
+  text-align: center;
+
+}
+/*********** Footer ***************/
+p.footer-links>a{
+  color:#4F682C;
+  font-family:'Roboto', sans-serif;
+  font-weight: 100;
+}
+p.footer-brand{
+  color:#4F682C;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }

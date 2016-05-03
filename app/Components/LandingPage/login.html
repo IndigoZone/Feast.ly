@@ -1,4 +1,4 @@
-<div id='login' class="authDiv">
+<!-- <div id='login' class="authDiv">
   <div ng-controller="LandingController">
     <img class='hat' src="https://lh3.ggpht.com/ppY5z1VSKsW_tMAb6mKN-HWGGa93tSR5-sUOYW0v50zneT70pULmH4W7B9yfkHMNrZA=w300">
     <h1>Sign In</h1>
@@ -14,4 +14,27 @@
     </div>
     <a href="#/register">Don't have an account? <strong>Register</strong> ...</a>
   </div>
-</div>
+</div> -->
+
+<div id="login" class="authDiv">
+  <div ng-controller="LandingController">
+<div class="container">
+  <h1 class="brand-login">Feast.ly</h1>
+  <div>
+    <h3 class="wrong"ng-show="show">Wrong Username and/or Password. Try again!</h3>
+      <form name="signupForm" class="form-signin" ng-submit='login()'>
+        <h2 class="form-signin-heading"> Sign In</h2>
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input type="text" id="username" ng-model='username' class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" ng-model='password' class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"><span class="remember-me">Remember me</span>
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" ng-click='login()'type="submit">Login</button>
+      </form>
+      <a class="already" href="#/register">Don't have an account? <strong>Register</strong> ...</a>
+      </div>
+    </div>

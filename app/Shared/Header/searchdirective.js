@@ -17,18 +17,21 @@ angular.module('search.directive', [])
     })
   };
 
-    $scope.showRecipe = function(thisRecipe){
-      console.log(thisRecipe)
-      Recipe.showRecipe(thisRecipe).then(function(){
-        // $scope.tellMe();
-        $scope.recipeName = recipeViewRes.name;
-        $scope.recipeImage = recipeViewRes.images[0].hostedLargeUrl;
-        $scope.recipeIngredients = recipeViewRes.ingredientLines;
-        $scope.recipeLink = recipeViewRes.source.sourceRecipeUrl;
+    $scope.showRecipe = function(value){
+      console.log(value);
+      thisRecipe = value;
 
-        $state.go('recipe');
-      })
-    
+
+      // Recipe.showRecipe(thisRecipe).then(function(){
+      //   // $scope.tellMe();
+      //   // $scope.recipeName = recipeViewRes.name;
+      //   // $scope.recipeImage = recipeViewRes.images[0].hostedLargeUrl;
+      //   // $scope.recipeIngredients = recipeViewRes.ingredientLines;
+      //   // $scope.recipeLink = recipeViewRes.source.sourceRecipeUrl;
+      //
+      //   $state.go('recipe');
+      // })
+
     }
-    $scope.showRecipe(thisRecipe);
+    $scope.showRecipe();
 }]);
