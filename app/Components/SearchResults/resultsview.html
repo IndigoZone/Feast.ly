@@ -21,9 +21,9 @@
 <!-- Projects Row -->
 <div class="row">
   <div ng-repeat="recipe in list" class="col-md-4">
-    <a  ui-sref="recipe" ng-click="showRecipe(recipe.id)"><img ng-src={{recipe.imageUrlsBySize["90"]}} title="rating: {{recipe.rating}}"></a>
+    <a  ui-sref="recipe" ng-click="showRecipe(recipe.id)"><img class="center" ng-src={{recipe.imageUrlsBySize["90"]}} title="rating: {{recipe.rating}}"></a>
     <h3>
-      <a href="#">{{recipe.recipeName}}</a>
+      <a class"recipeName" href="#">{{recipe.recipeName}}</a>
     </h3>
     <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p> -->
   </div>
