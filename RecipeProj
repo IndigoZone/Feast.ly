@@ -1,0 +1,17 @@
+
+>app/
+  >search/
+    searchView.html
+    search.js
+  >results/
+    resultsView.html
+    results.js
+  >recipe/
+    recipeView.html
+    recipe.js
+>assets/   //images, styling
+  >img/
+  >css/
+  >libs/
+  >js/
+index.html    //mainpage with ngview div where all views go
