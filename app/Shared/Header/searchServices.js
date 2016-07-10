@@ -5,6 +5,7 @@ angular.module('search.services', [])
 .factory('Recipes', ['$http', '$q',function($http, $q){
   // var results;
   getRecipes = function(criteria) {
+  console.log("CALLING GET RECIPES")
   return  $http({
         method: 'GET',
         url: 'http://api.yummly.com/v1/api/recipes?',
