@@ -4,6 +4,7 @@ angular.module('landing.services',[])
     return $http({
       method: "POST",
       url: "http://localhost:4444/api/register",
+      // url: "/api/register",
       data: {username: username, password: password}
     });
   };
@@ -11,6 +12,7 @@ angular.module('landing.services',[])
     return $http({
       method: "POST",
       url: "http://localhost:4444/api/login",
+      // url: "/api/login",
       data: {username: username, password: password}
     }).then(function(res){
       return res.data;
