@@ -9,7 +9,7 @@ angular.module('search.directive', [])
     $scope.userInput['q'] = input.split(" ").join('+');
     console.log('this is the query:', $scope.userInput)
     Recipes.getRecipes($scope.userInput).then(function(data){
-        console.log('data:',data)
+        // console.log('data:',data)
          $scope.list = data.data;
           console.log('results:', $scope.list)
         // return data;

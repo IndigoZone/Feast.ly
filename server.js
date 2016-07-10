@@ -16,6 +16,14 @@ var port = process.env.PORT || 4444;
 app.use(express.static(__dirname + '/app/'));
 app.use(bodyParser.json());
 
+// %%%%%%%%%%%This Should Fix our CORS%%%%%%%%%%%%%%%%%%%%
+app.use(function(req, res, next){
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'X-Requested-With');
+    next();
+});
+// %%%%%%%%%%%%%^^^^^^^^^^^^^^^%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 //mongoose connection
 mongoose.connect('mongodb://IndigoZone:telegraph5@ds019481.mlab.com:19481/heroku_vj69wpp5'); 
 
