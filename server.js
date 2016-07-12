@@ -13,7 +13,7 @@ var app = express();
 var port = process.env.PORT || 4444;
 
 //middleware
-app.use(express.static(__dirname + '/app/'));
+app.use(express.static(__dirname + '/app'));
 app.use(bodyParser.json());
 
 // %%%%%%%%%%%This Should Fix our CORS%%%%%%%%%%%%%%%%%%%%
