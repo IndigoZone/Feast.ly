@@ -25,7 +25,7 @@ app.use(function(req, res, next){
 // %%%%%%%%%%%%%^^^^^^^^^^^^^^^%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 //mongoose connection
-mongoose.connect('mongodb://IndigoZone:telegraph5@ds019481.mlab.com:19481/heroku_vj69wpp5'); 
+mongoose.connect('mongodb://indigozone:indigozone@ds015962.mlab.com:15962/heroku_v75xg8cs'); 
 
 //connects app and port
 app.listen(port);
