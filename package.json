@@ -23,7 +23,6 @@
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "mongoose": "^4.4.13",
-    "node": "6.3.0",
     "q": "^1.4.1"
   },
   "engines": {
