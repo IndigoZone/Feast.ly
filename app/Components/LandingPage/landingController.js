@@ -20,7 +20,6 @@ angular.module ('feastly.landing', [])
   $scope.register = function(){
     Auth.register($scope.username, $scope.password)
     .then(function(){
-      console.log("Register Successful");
       $location.path('/login');
     });
   };
